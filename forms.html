@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <litle>Learning HTML Forms</litle>
+    </head>
+    <body>
+        <form action="/process.php">
+            <!--input type text-->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Nama:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <!--input type email-->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <!--input type password-->
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <!--input type date-->
+            <label for="birthdate">Birth date:</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br>
+
+            <!--select element-->
+            <label for="major">Major</label><br>
+            <select id="major" name="major">
+                <option value="Informatic Engineering">Informatics Engineering</option>
+                <option value="Information system">Information system</option>
+                <option value="Accounting">Accounting</option>
+                <option value="Management">Management</option>
+                <option value="fhilosofi">Filsafat</option>       
+            </select><br><br>
+
+            <!--select element-->
+            <label for="religion">Religion</label><br>
+            <select id="religion" name="religion">
+                <option value="Christian">Christian</option>
+                <option value="Moslem">Moslem</option>
+                <option value="Buddhist">Buddhist</option>
+                <option value="Hindu">Hindu</option>
+            </select><br>
+
+            <!--textarea element-->
+            <p>Write comment below:</p>
+            <textarea name="comment" rows="10" cols="30">
+
+            </textarea>
+
+            <!--input type radio-->
+            <p>Choose your gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</laber>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <!--input type checkbox-->
+            <p>Choose your Hobbies:</p>
+            <input type="checkbox" id="singging" name="hobby1" value="singging">
+            <label for="singging">Singging</label><br>
+            <input type="checkbox" id="drawing" name="hobby2" value="drawing">
+            <label for="drawing">Drawing</label><br>
+            <input type="checkbox" id="cooking" name="hobby3" value="cooking">
+            <label for="cooking">Cooking</label><br>
+            <input type="checkbox" id="playing_basketball" name="hobby4" value="playing_basketball">
+            <label for="playing_basketball">Playing_Basketball</label><br>
+
+            <!--input type text-->
+            <input type="submit">
+            <!--input type reset-->
+            <input type="Reset">
+        </form>
+    </body>
+</htm>
