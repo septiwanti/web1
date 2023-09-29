@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html>
-   <head>
-    <!--eksternal CSS-->
-        <link rel="stylesheet" href="style.css">
-        <title>Learning CSS</title>
-        <!--internal CSS-->
-        <style>
-            body {
-                background-color: yellow;
-            }
-            h2 {
-                background-color: blue;
-                color: white
-            }
-            #today {
-                border-bottom: 10px dashed darkgreen;
-            }
-            .center {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <!--inline CSS-->
-        <h1 style="color:red; text-align: center">Learning CSS is fun!</h1>
-        <h2>My Name is Emma</h2>
-        <h3 id="Today">Today is friday</h3>
-    </body>
+  <head>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Learning CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      /* This is a comment in CSS */
+      body {
+        /* background-color: rgb(255, 165, 0); */
+        background-image: url("foto cat.jpg");
+        background-repeat: no-repeat;
+      }
+      h2 {
+        background-color: violet;
+        color: white;
+        border-radius: 10px;
+      }
+      #today {
+        /* This is without shorthand */
+        border-bottom-width: 10px;
+        border-bottom-style: dashed;
+        border-bottom-color: darkgreen;
+
+        /* This is with shorthand */
+        border-bottom: 10px dashed darkgreen;
+      }
+      .center {
+        text-align: center;
+      }
+      h1 {
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        margin-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="color: red; text-align: center">Learning CSS is Fun!</h1>
+    <h2 class="center">My name is Emma Nenotek</h2>
+    <h3 id="today" class="center">Today is Friday</h3>
+  </body>
 </html>
