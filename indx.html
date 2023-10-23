@@ -1,0 +1,132 @@
+<html dir="ltr" lang="en"><head><meta charset="utf-8"><link rel="preconnect" href="https://edgeservices.bing.com" crossorigin="use-credentials"><style>body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #F3F3F3;
+  }
+
+  iframe {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+  }
+
+  .underside-splash-container {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    color: #111111;
+    font-family: 'Segoe UI', "-apple-system", Segoe, Tahoma, HelveticaNeue, Roboto, Arial, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .splash-loading-wrapper {
+    position: relative;
+    width: 30%;
+    height: 2px;
+    background-color: #DDDDDD;
+    overflow: hidden;
+  }
+
+  .splash-loading-wrapper:before {
+    content: "";
+    border: 1px solid "";
+    border-radius: 10px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+  }
+
+  .splash-loading-wrapper .splash-loading {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #0078D4;
+    width: 0;
+    animation: progressAnimation 2s linear infinite;
+  }
+
+  .splash-info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .text-show {
+    opacity: 1;
+    transition: all 333ms ease;
+  }
+
+  .text-fade {
+    opacity: 0;
+    transition: all 167ms ease;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      left: 0%;
+      right: 100%;
+      width: 0%;
+    }
+
+    25% {
+      left: 0%;
+      right: 75%;
+      width: 50%;
+    }
+
+    50% {
+      left: 50%;
+      right: 50%;
+      width: 50%;
+    }
+
+    75% {
+      left: 75%;
+      right: 25%;
+      width: 50%;
+    }
+
+    100% {
+      left: 100%;
+      right: 0%;
+      width: 0%;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #2B2B2B;
+    }
+
+    .underside-splash-container {
+      color: #ffffff;
+    }
+  }</style><script src="/base-error-reporting.js"></script><script src="/underside-chat-error-reporting.js"></script><script src="/strings.m.js" type="module"></script></head><body><div class="underside-splash-container" style="display: none;"><div class="splash-logo"><img src="/brand.svg" alt="Brand"></div><div class="splash-loading-wrapper" style="display: none;"><div class="splash-loading"></div></div><div class="splash-info"><span id="loading-span"></span></div></div><iframe id="underside-iframe-container" name="underside-iframe-container" frameborder="0" csp="frame-src https://www.bing.com/search https://edgeservices.bing.com/ https://www.bing.com/shop/productpage https://www.bing.com/images/create https://login.live.com/login.srf https://www.bing.com/turing/captcha/challenge https://www.bing.com/api/shopping/v1/edgeframe https://www.msn.com/widgets/fullpage/gaming/gamingfeed-widget https://challenges.cloudflare.com/ https://www.bing.com/lite/auw https://www.bing.com/travelgrowthedge/ux; base-uri 'self'; require-trusted-types-for 'script'; trusted-types default;" allow="clipboard-write;microphone;camera" src="https://edgeservices.bing.com/edgesvc/shell?&amp;lightschemeovr=1&amp;FORM=SHORUN&amp;udscs=1&amp;udsnav=1&amp;setlang=en-US&amp;clientscopes=noheader,coauthor,chat,visibilitypm,docvisibility,channelstable,&amp;copilotsupported=0,&amp;browserversion=118.0.2088.61,&amp;udsframed=1" style="display: block;"></iframe><script type="module" src="/underside-chat.bundle.js"></script></body></html>
